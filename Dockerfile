@@ -9,8 +9,7 @@ LABEL maintainer="rsmacapinlac"
 
 ENV \
     CUSTOM_PORT="8080" \
-    TITLE="Obsidian v$OBSIDIAN_VERSION" \
-    FM_HOME="/vaults"
+    TITLE="Obsidian v$OBSIDIAN_VERSION"
 
 RUN \
     echo "**** install packages ****" && \
@@ -48,6 +47,5 @@ EXPOSE 27123
 EXPOSE 27124
 
 # volumes
-VOLUME /config
-VOLUME /vaults
+VOLUME ["/config"]
 

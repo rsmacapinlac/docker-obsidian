@@ -1,0 +1,10 @@
+.git
+.gitignore
+.github
+.gitattributes
+.vscode
+READMETEMPLATE.md
+README.md
+LICENSE
+.editorconfig
+assets
