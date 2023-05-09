@@ -1,6 +1,6 @@
 # docker-obsidian
 
-A docker image for [Obsidian](https://obsidian.md/) using the [linuxserver.io](https://linuxserver.io/)'s KASM base image.
+A docker image for [Obsidian.md](https://obsidian.md/) using the [linuxserver.io](https://linuxserver.io/)'s KASM base image.
 
 ## Usage
 
@@ -22,8 +22,13 @@ services:
     volumes:
       - ./obsidian/config:/config
     environment:
-      - PUID=1001
-      - PGID=1001
+      - PUID=1000
+      - PGID=1000
       - TZ=America/Vancouver
 
 ```
+
+### Credits
+
+ * [Sytone](https://github.com/sytone/obsidian-remote) for the initial implementation of this.
+ * [ilkersigirci](https://github.com/ilkersigirci) and [this issue](https://github.com/sytone/obsidian-remote/issues/51) which helped form the base of the Dockerfile.
