@@ -10,25 +10,20 @@ Here are some example snippets to help you get started creating a container.
 
 ```yaml
 ---
-version: "2"
+
+version: '3'
 services:
-  bookstack:
-    image: lscr.io/linuxserver/bookstack
+  obsidian:
+    image: 'rsmacapinlac/docker-obsidian:latest'
     container_name: obsidian
-    environment:
-      - PUID=1000
-      - PGID=1000
-      - APP_URL=
-      - DB_HOST=bookstack_db
-      - DB_PORT=3306
-      - DB_USER=bookstack
-      - DB_PASS=<yourdbpass>
-      - DB_DATABASE=bookstackapp
-    volumes:
-      - /path/to/data:/config
-      - /path/to/data:/vaults
+    restart: unless-stopped
     ports:
       - 8080:8080
-    restart: unless-stopped
+    volumes:
+      - ./obsidian/config:/config
+    environment:
+      - PUID=1001
+      - PGID=1001
+      - TZ=America/Vancouver
 
 ```
