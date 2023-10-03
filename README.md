@@ -28,6 +28,16 @@ services:
 
 ```
 
+## Development
+
+User the test file to build the container using the following command.
+
+```bash
+# builds and starts the container
+# after, container is accessible using http://localhost:8080
+docker compose -f docker-compose-test.yml up
+```
+
 ### Credits
 
  * [Sytone](https://github.com/sytone/obsidian-remote) for the initial implementation of this.
