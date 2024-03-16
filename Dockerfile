@@ -2,7 +2,7 @@ FROM ghcr.io/linuxserver/baseimage-kasmvnc:debianbookworm
 
 ARG BUILD_DATE
 ARG VERSION
-ARG OBSIDIAN_VERSION=1.4.16
+ARG OBSIDIAN_VERSION=1.5.8
 # LABEL build_version="Linuxserver.io version:- ${VERSION} Build-date:- ${BUILD_DATE}"
 LABEL maintainer="rsmacapinlac"
 
