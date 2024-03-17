@@ -25,6 +25,8 @@ RUN \
         libatspi2.0-0 \
         libsecret-1-0 \
         libnss3 \
+        # https://github.com/rsmacapinlac/docker-obsidian/issues/5
+        python3-xdg \
         && \
     echo "**** cleanup ****" && \
         apt-get autoclean && \
@@ -32,6 +34,7 @@ RUN \
         /var/lib/apt/lists/* \
         /var/tmp/* \
         /tmp/*
+
 
 # Install obsidian
 RUN dl_url="https://github.com/obsidianmd/obsidian-releases/releases/download/v${OBSIDIAN_VERSION}/obsidian_${OBSIDIAN_VERSION}_amd64.deb" && \
