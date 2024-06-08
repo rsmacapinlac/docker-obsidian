@@ -1,3 +1,5 @@
+LinuxServer.io has created a version under [their fleet](https://docs.linuxserver.io/images/docker-obsidian/). I will be archving this container.
+
 # docker-obsidian
 
 A docker image for [Obsidian.md](https://obsidian.md/) using the [linuxserver.io](https://linuxserver.io/)'s KASM base image.
